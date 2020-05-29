@@ -1,0 +1,79 @@
+
+#QUESTION 2
+
+GET ashok/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+#QUESTION 3
+
+GET ashok/_search?size=100
+
+# QUESTION 4
+
+GET ashok/_search
+{
+  "query":{
+    "range": {
+      "date": {
+        "gte": "May 1, 2017",
+        "lte": "May 31,2017"
+      }
+    }
+  }
+}
+
+# QUESTION 5
+
+GET ashok/_search
+{
+  "query":{
+    "query_string": {
+      "default_field": "title",
+      "query": "elastic"
+    }
+  }
+}
+
+# QUESTION 6
+
+GET ashok/_search
+{
+  "query":{
+    "query_string": {
+      "default_field": "title",
+      "query": "elastic stack"
+      , "default_operator": "OR"
+    }
+  }
+}
+
+# QUESTION 7
+
+GET ashok/_search
+{
+  "query":{
+    "query_string": {
+      "default_field": "title",
+      "query": "elastic stack"
+      , "default_operator": "AND"
+    }
+  }
+}
+
+# QUESTION 8
+
+ GET ashok/_search
+ {
+   "query": {
+     "term": {
+       "content.keyword": {
+         "value": "search"
+       }
+     }
+     }
+   }
+ }
