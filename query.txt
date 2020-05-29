@@ -17,11 +17,8 @@ GET ashok/_search?size=100
 GET ashok/_search
 {
   "query":{
-    "range": {
-      "date": {
-        "gte": "May 1, 2017",
-        "lte": "May 31,2017"
-      }
+    "match_all": {
+      "date": "May 01, 2017"
     }
   }
 }
@@ -65,15 +62,60 @@ GET ashok/_search
 }
 
 # QUESTION 8
+#write a request for each of the search below
+#content should have word search
 
- GET ashok/_search
- {
-   "query": {
-     "term": {
-       "content.keyword": {
-         "value": "search"
-       }
-     }
-     }
-   }
- }
+GET ashok/_search
+{
+  "query":{
+    "query_string": {
+      "default_field": "content",
+      "query": "search"
+    }
+  }
+}
+
+GET ashok/_search
+{
+  "query":{
+    "query_string": {
+      "default_field": "content",
+      "query": "search analytics"
+      , "default_operator": "OR"
+    }
+  }
+}
+
+
+GET ashok/_search
+{
+  "query":{
+    "query_string": {
+      "default_field": "content",
+      "query": "search analytics"
+      , "default_operator": "AND"
+    }
+  }
+}
+
+#QUESTION 9
+
+GET ashok/_search
+{
+    "query": {
+        "match_phrase": {
+            "content" : "search analytics"
+        }
+    }
+}
+
+#QUESTION 10
+
+GET ashok/_search
+{
+    "query": {
+        "match_phrase": {
+            "content" : "search AND analytics"
+        }
+    }
+}
