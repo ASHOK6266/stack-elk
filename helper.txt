@@ -9,3 +9,15 @@ Question 09 : phrase recherchée : "search analytics" en sélectionnant les 3 r�
 Question 10 : phrase recherchée : "search analytics", ici à la différence de la question 9, il faut récupérer les document qui contiennent "search X analytics". X étant une variable.
 Question 13 : il y a 2 à faire, la première concerne la réponse à la question "Quel est le score de la recherche de la phrase 'performance optimizations improvements' et la deuxième 
 question générique (donc pas de réponse exacte) "peut-on améliorer le score des résultats déjà trouvé dans 13.1 ?
+
+
+
+
+ANSWER hits
+
+Q8 : 432, 476, 110
+Q9 : 6
+Q10 : 41
+Q12 : 82
+Q13 : C'est une question ouverte, l'idée est de dire si on peut améliorer le 
+score, si oui faut proposer une requete, donc pas de nombre de hits exacts
