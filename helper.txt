@@ -1,0 +1,11 @@
+Le fichier ne contient pas de header, il faut le préciser au parser et aussi définir les headers manuellement
+Si le parser a une option de trim, il faut la désactiver pour que toutes les lignes soient prises en compte
+Les champs de la données se trouvent sur le fichier PDF "Le TP", faut préciser ces champs lors du parsing.
+Question 01 : Parser + Convertir + push sur elastic (bulk)
+Question 02 à 13 : Des captures d'écran comme réponse (requêtes + résultats)
+Question 03 : Le but est d'avoir 100 hits retournés et non les 10 hits par défaut
+Question 08 : il est demandé d'afficher le nombre de hits pour les 3 sous-questions
+Question 09 : phrase recherchée : "search analytics" en sélectionnant les 3 résultats les mieux noté.
+Question 10 : phrase recherchée : "search analytics", ici à la différence de la question 9, il faut récupérer les document qui contiennent "search X analytics". X étant une variable.
+Question 13 : il y a 2 à faire, la première concerne la réponse à la question "Quel est le score de la recherche de la phrase 'performance optimizations improvements' et la deuxième 
+question générique (donc pas de réponse exacte) "peut-on améliorer le score des résultats déjà trouvé dans 13.1 ?
